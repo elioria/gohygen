@@ -1,0 +1,4 @@
+/gohygen
+/cmd/gohygen/gohygen
+*.out
+*.test
