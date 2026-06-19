@@ -156,6 +156,26 @@ becomes a template local; `--dry` previews without writing.
 
 ---
 
+## Examples & real-template compatibility
+
+See **[EXAMPLES.md](./EXAMPLES.md)** for a walkthrough, and run the bundled
+demo:
+
+```bash
+go run ./examples
+```
+
+gohygen is tested against real upstream templates — hygen's own metaverse corpus
+(the `mailer` output is checked byte-for-byte against hygen's expected fixture)
+and the production [jondot/hygen-CRA](https://github.com/jondot/hygen-CRA) React
+generators:
+
+```bash
+go test -run 'TestMetaverse|TestCRA' -v ./...
+```
+
+---
+
 ## Relationship to the family
 
 - **[ejs4go](../ejs4go)** — EJS for Go via the goja JS engine.
